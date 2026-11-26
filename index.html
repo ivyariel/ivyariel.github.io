@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luhui Wang (ivyariel) - Homepage</title>
+
+  <!-- ===== 外部依赖（全部走 CDN，无需下载） ===== -->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.5/css/bulma.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <!-- ===== 全部 CSS 内嵌（改样式就改这里） ===== -->
+  <style>
+    /* ---- 原版 style.css ---- */
+    body { scroll-behavior: smooth; }
+    .menu-list a.is-active { background-color: #4a4a4a; color: #fff; font-weight: 600; }
+    .details h3 { font-weight: 600; font-size: 1em; color: #000; }
+    .sticky { position: sticky; top: 30px; }
+    .social { padding-bottom: 2em; padding-top: 0em; font-size: 1em; }
+    .sidebar { padding-bottom: 2em; padding-top: 1em; font-size: 1em; }
+    img.img-logo { height: auto; width: 11em; }
+    .column.is-3 { margin: auto; }
+    .details a:hover, .right-panel a:hover { color: rgb(238, 76, 44); }
+    a:active { color: rgb(238, 76, 44); }
+    #sidebar a:hover { text-decoration: none; }
+    .social a:hover { text-decoration: none; color: #4a4a4a; }
+    .social a:hover svg { transform: scale(1.5); }
+    .dark { color: #4a4a4a !important; }
+    .dark:hover { color: #4a4a4a !important; }
+
+    /* ---- 原版内嵌样式 ---- */
+    .red   { color: rgb(238, 76, 44); font-style: normal; }
+    .blue  { color: rgb(238, 76, 44); font-style: normal; }
+    #intro { margin-top: 0em !important; }
+    .content h3 { margin-bottom: 1em !important; margin-top: 2em !important; }
+    .content figure { width: 90%; display: flex; align-items: center; overflow: hidden; margin-left: auto !important; margin-right: auto !important; }
+    .columns:not(:last-child) { margin-bottom: 1.75rem !important; }
+    #sidebar { width: 75%; }
+    @media screen and (min-width: 769px), print {
+      .column.is-2_5, .column.is-2-tablet { flex: none; width: 20%; }
+    }
+
+    /* ---- 新增：让 footer 居中好看 ---- */
+    footer { text-align: center; padding: 2rem 0; color: #999; font-size: 0.9rem; }
+  </style>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+
+        <!-- ==================== 左侧栏 ==================== -->
+        <div class="column is-2_5">
+          <div class="sticky">
+
+            <!-- 头像（把 src 换成你的图片路径） -->
+            <figure class="image" style="width: 11.6rem; margin-top: 6px;">
+              <img src="images/profile.jpg" alt="Profile Photo">
+            </figure>
+
+            <!-- 个人信息（改成你自己的） -->
+            <div class="content">
+              <h2 style="margin-top: 1em">Luhui Wang</h2>
+              <p>
+                <b>Senior Student</b><br>
+                @ Hohai University<br>
+                Nanjing, China<br>
+                2361910203@hhu.edu.cn
+              </p>
+            </div>
+
+            <!-- 社交图标链接（改成你自己的） -->
+            <div class="social">
+              <a href="mailto:your.email@example.com" target="_blank">
+                <span class="fa-regular fa-envelope fa-2x" style="color:#4a4a4a;"></span>
+              </a>
+              <a href="https://github.com/ivyariel" target="_blank">
+                <span class="fab fa-github fa-2x" style="color:#4a4a4a; margin-left:15px;"></span>
+              </a>
+              <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">
+                <span class="fab fa-linkedin fa-2x" style="color:#4a4a4a; margin-left:15px;"></span>
+              </a>
+            </div>
+
+            <!-- 侧边导航（Quick Links） -->
+            <div id="sidebar" class="menu sticky is-hidden-mobile">
+              <p class="menu-label"><b>Quick Links</b></p>
+              <ul class="menu-list">
+                <li><a href="#About">About Me</a></li>
+                <li><a href="#Research">Research</a></li>
+                <li><a href="#Publications">Publications</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#Misc">Misc.</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ==================== 右侧主内容 ==================== -->
+        <div class="column right-panel">
+            <div class="content">
+
+                <!-- ===== About Me ===== -->
+                <h2 id="About">About Me</h2>
+                <p>
+                    Write a short intro about yourself. For example:
+                    I'm a Computer Science student at XX University, graduating in 2027.
+                    I'm passionate about AI, HCI, and building systems that make people's lives easier.
+                </p>
+                <p>
+                    <strong>Coursework: </strong>
+                    Linear Algebra <strong>|</strong>
+                    Algorithms <strong>|</strong>
+                    Artificial Intelligence <strong>|</strong>
+                    Machine Learning <strong>|</strong>
+                    Software Engineering <strong>|</strong>
+                    Reinforcement Learning
+                </p>
+                <br>
+
+                <!-- ===== Research ===== -->
+                <h2 id="Research">Research</h2>
+                <p>
+                    I'm currently exploring my research interests in areas such as
+                    <strong>AI, HCI, and Human-Robot Interaction</strong>.
+                </p>
+
+                <!-- 研究项目示例 1 -->
+                <ul>
+                    <li>
+                        <strong>Your Research Project Title</strong>:<br>
+                        <i>[Submitted at: <b>Conference/Journal Name</b>]</i><br>
+                        <i>[Time Period] -- Under Review</i><br>
+                        <a href="https://arxiv.org/abs/xxxx.xxxxx" target="_blank">[Paper Arxiv link]</a>
+                    </li>
+                </ul>
+                <article class="columns">
+                    <div class="column is-5">
+                        <figure class="image">
+                            <img src="images/research1.png" alt="Research Image">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <ul>
+                                <li><strong>Key contribution 1</strong> — describe what you built or discovered.</li>
+                                <li><strong>Key contribution 2</strong> — describe the impact or metrics.</li>
+                                <li><strong>Key contribution 3</strong> — mention tools or frameworks used.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <br>
+
+                <!-- ===== Publications ===== -->
+                <h2 id="Publications">Publications</h2>
+                <br>
+
+                <article class="columns">
+                    <div class="column is-4">
+                        <figure class="image">
+                            <img src="images/paper1.png" alt="Paper Figure">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <p>
+                                <b>Paper Title Here</b><br>
+                                Author A, Author B, <strong>Your Name</strong>, Author C.<br>
+                                <i>Published at XX Conference 2026</i><br>
+                                <a href="https://arxiv.org/abs/xxxx.xxxxx" target="_blank">[PDF]</a>
+                                <a href="https://github.com/ivyariel" target="_blank">[Code]</a>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <br>
+
+                <!-- ===== Projects ===== -->
+                <h2 id="Projects">Projects</h2>
+
+                <!-- 项目 1 -->
+                <article class="columns">
+                    <div class="column is-3">
+                        <figure class="image">
+                            <img src="images/project1.png" alt="Project 1">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <p>
+                                <b>Project Name 1</b><br>
+                                <a href="https://github.com/ivyariel" target="_blank">[source code]</a>
+                            </p>
+                            <ul>
+                                <li>Bullet point describing what the project does.</li>
+                                <li>Bullet point about the tech stack.</li>
+                                <li>Bullet point about the result or impact.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 项目 2 -->
+                <article class="columns">
+                    <div class="column is-3">
+                        <figure class="image">
+                            <img src="images/project2.png" alt="Project 2">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <p>
+                                <b>Project Name 2</b><br>
+                                <a href="https://github.com/ivyariel" target="_blank">[source code]</a>
+                            </p>
+                            <ul>
+                                <li>Bullet point describing what the project does.</li>
+                                <li>Bullet point about the methodology.</li>
+                                <li>Bullet point about what you learned.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 项目 3 -->
+                <article class="columns">
+                    <div class="column is-3">
+                        <figure class="image">
+                            <img src="images/project3.png" alt="Project 3">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <p>
+                                <b>Project Name 3</b><br>
+                                <a href="https://github.com/ivyariel" target="_blank">[source code]</a>
+                            </p>
+                            <ul>
+                                <li>Bullet point describing what the project does.</li>
+                                <li>Bullet point about tools or frameworks used.</li>
+                                <li>Bullet point about the outcome.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <br>
+                
+                <!-- =====Academic Projects ===== -->
+                <h2 id="Academic Projects">Academic Projects</h2>
+
+                <!-- 项目 1 -->
+                <article class="columns">
+                    <div class="column is-3">
+                        <figure class="image">
+                            <img src="images/project1.png" alt="Project 1">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <p>
+                                <b>Project Name 1</b><br>
+                                <a href="https://github.com/ivyariel" target="_blank">[source code]</a>
+                            </p>
+                            <ul>
+                                <li>Bullet point describing what the project does.</li>
+                                <li>Bullet point about the tech stack.</li>
+                                <li>Bullet point about the result or impact.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 项目 2 -->
+                <article class="columns">
+                    <div class="column is-3">
+                        <figure class="image">
+                            <img src="images/project2.png" alt="Project 2">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <p>
+                                <b>Project Name 2</b><br>
+                                <a href="https://github.com/ivyariel" target="_blank">[source code]</a>
+                            </p>
+                            <ul>
+                                <li>Bullet point describing what the project does.</li>
+                                <li>Bullet point about the methodology.</li>
+                                <li>Bullet point about what you learned.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ===== Experience ===== -->
+                <h2 id="Experience">Experience</h2>
+                <ul>
+                    <li>
+                        <strong>Your Company / Lab Name</strong>
+                        <ul>
+                            <li>[Start -- End] <strong>Your Role</strong></li>
+                            <ul>
+                                <li>Responsibility or achievement 1.</li>
+                                <li>Responsibility or achievement 2.</li>
+                                <li>Responsibility or achievement 3.</li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Another Company / Lab</strong>
+                        <ul>
+                            <li>[Start -- End] <strong>Your Role</strong></li>
+                            <ul>
+                                <li>Responsibility or achievement 1.</li>
+                                <li>Responsibility or achievement 2.</li>
+                            </ul>
+                        </ul>
+                    </li>
+                </ul>
+                <br>
+
+                <!-- ===== Misc. ===== -->
+                <h2 id="Misc">Misc.</h2>
+                <p>
+                    Outside of work and research, I enjoy [hobby 1]🎯, [hobby 2]🎮, and [hobby 3]📚.
+                    Sometimes when inspiration strikes, I also love to try implementing my ideas.
+                </p>
+
+                <article class="columns">
+                    <div class="column is-3">
+                        <figure class="image">
+                            <img src="images/hobby.jpg" alt="Hobby">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <p><b>My Hobby</b></p>
+                            <p>A short description of your hobby or side interest.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <p><strong>Side projects:</strong></p>
+
+                <article class="columns">
+                    <div class="column is-3">
+                        <figure class="image">
+                            <img src="images/sideproject.png" alt="Side Project">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <p><b>Side Project Name</b></p>
+                            <p>A brief description — what it does, what tech you used, and what makes it fun.</p>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== Footer ==================== -->
+    <footer>
+      © 2026 Luhui Wang &nbsp;·&nbsp; Last update: <span id="lastUpdate"></span>
+    </footer>
+  </section>
+
+  <!-- ===== 全部 JavaScript（侧边栏高亮 + 日期） ===== -->
+  <script>
+    // 自动填入当前月份和年份
+    document.getElementById('lastUpdate').textContent =
+      new Date().toLocaleString('en-US', { month: 'short', year: 'numeric' });
+
+    var $hashList = $('.menu-list a'), offsetList, maxScrollHeight;
+
+    $('#sidebar').on('click', 'a', function () { activate($(this)); });
+    $(window).on('resize', debounce(calculateBoundary, 300));
+    $(document).on('scroll', debounce(judgeScroll, 300));
+
+    calculateBoundary();
+    judgeScroll();
+
+    function calculateBoundary() {
+      offsetList = $hashList.map(function (idx, ele) {
+        return $(ele.hash).offset().top;
+      });
+      maxScrollHeight = $(document).height() - $(window).height();
+    }
+
+    function judgeScroll() {
+      var tps = $("html").scrollTop() || $("body").scrollTop();
+      var len = offsetList.length;
+      if (tps >= maxScrollHeight - 10) {
+        activate($hashList.eq(len - 1));
+        return;
+      }
+      for (var i = 0; i < len; i++) {
+        if (tps + 50 < offsetList[i]) {
+          activate($hashList.eq(Math.max(0, i - 1)));
+          return;
+        }
+      }
+    }
+
+    function activate(ele) {
+      $hashList.removeClass('is-active');
+      ele.addClass('is-active');
+    }
+
+    function debounce(fn, delay) {
+      var timeout = null;
+      return function () {
+        var args = arguments;
+        var context = this;
+        if (!timeout) {
+          timeout = setTimeout(function () {
+            timeout = 0;
+            fn.apply(context, args);
+          }, delay);
+        }
+      };
+    }
+  </script>
+
+</body>
+</html>
